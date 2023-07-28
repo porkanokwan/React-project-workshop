@@ -1,0 +1,138 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 80px;
+  color: rgba(175, 47, 47, 0.15);
+}
+
+[name="todo"] {
+  margin-top: 25px;
+  width: 500px;
+  height: 50px;
+  border: 0px;
+  box-shadow: 5px 5px 8px #999;
+  padding: 16px 16px 16px 25px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.boxList {
+  width: 500px;
+  margin: auto;
+  text-align: start;
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+
+.todoList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  height: 50px;
+  background-color: white;
+  border: 1px solid #999;
+  padding: 15px 15px 15px 20px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 8px #999;
+}
+
+.checklist {
+  display: flex;
+}
+
+[name="check"] {
+  margin-right: 10px;
+}
+
+[name="todo"]::placeholder {
+  font-family: inherit;
+  font-style: oblique;
+  color: #d9d9d9;
+}
+
+.btn-cancle:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-cancle {
+  opacity: 0;
+  border: 0;
+  background-color: white;
+  color: red;
+  font-size: 16px;
+}
+
+.todo {
+  font-size: 24px;
+  margin-top: 9px;
+}
+
+.toggle {
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+
+.box-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: #999;
+}
+
+.box-filter .btn-filter {
+  margin-left: 25px;
+}
+
+.btn-filter input {
+  display: none;
+}
+
+.btn-filter label {
+  margin-right: 10px;
+  background-color: #f5f5f5;
+}
+
+.btn-filter label:hover {
+  cursor: pointer;
+  border: 0.5px solid #999;
+  padding: 5px;
+}
+
+.filtered {
+  border: 0.5px solid #999;
+  padding: 5px;
+}
+
+.btn-clear {
+  background-color: #f5f5f5;
+  border: 0;
+  color: #999;
+  font-size: 16px;
+}
+
+.btn-clear:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+.focus {
+  outline-style: none;
+}
